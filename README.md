@@ -1,2 +1,4 @@
 # TCA6408
-Simple library for the TCA6408 I/O expander
+Very simple library and example for this I2C-based I/O expander
+
+Tested with Teensy 3.2 and Particle Photon.
