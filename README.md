@@ -13,7 +13,6 @@ Set it up to use all ports as inputs:
     void setup() {
         ioExpanderInputs.begin( TCA6408_ADDR1 ); // Setup on I2C address 0x20
         ioExpanderInputs.writeByte( 0xFF, TCA6408_CONFIGURATION ); // set all channels as outputs (B111111)
-        ioExpanderInputs.writeByte( 0x00, TCA6408_INPUT ); // 0xff turn all channels on
     }
 
 Read the inputs in the main loop
@@ -28,7 +27,6 @@ To setup as 8 output ports, use this syntax:
     void setup() {
         ioExpanderOut.begin( TCA6408_ADDR1 );
         ioExpanderOut.writeByte( 0x00, TCA6408_CONFIGURATION ); // set all channels as outputs
-        ioExpanderOut.writeByte( 0x00, TCA6408_OUTPUT ); // 0xff turn all channels on
     }
     
     void loop() {
